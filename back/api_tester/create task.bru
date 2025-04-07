@@ -1,0 +1,21 @@
+meta {
+  name: create task
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/api/tasks
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "test le 2",
+    "description": "ceci est un test",
+    "completed": false,
+    "completeFor": "2025-04-12T21:24:08.943Z" ,
+    "assignedTo": "baptiste"
+  }
+}
